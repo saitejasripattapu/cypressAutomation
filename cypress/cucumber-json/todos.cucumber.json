@@ -1,0 +1,1117 @@
+[
+  {
+    "keyword": "Feature",
+    "name": "End to end todos",
+    "line": 1,
+    "id": "end-to-end-todos",
+    "tags": [],
+    "uri": "todos.feature",
+    "elements": [
+      {
+        "id": "end-to-end-todos;creating-a--single-to-do-task",
+        "keyword": "Scenario",
+        "line": 4,
+        "name": "Creating a  single to-do task",
+        "tags": [
+          {
+            "name": "@Testcase1",
+            "line": 3
+          },
+          {
+            "name": "@CreateSingleTask",
+            "line": 3
+          }
+        ],
+        "type": "scenario",
+        "steps": [
+          {
+            "arguments": [],
+            "keyword": "Given ",
+            "line": 5,
+            "name": "I open Todos Page",
+            "result": {
+              "status": "passed",
+              "duration": 195000000
+            }
+          },
+          {
+            "arguments": [
+              {
+                "rows": [
+                  {
+                    "cells": [
+                      "my first to to task"
+                    ]
+                  }
+                ]
+              }
+            ],
+            "keyword": "When ",
+            "line": 6,
+            "name": "I fill the todo task details",
+            "result": {
+              "status": "passed",
+              "duration": 455000000
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "Then ",
+            "line": 8,
+            "name": "validate the task created",
+            "result": {
+              "status": "passed",
+              "duration": 5000000
+            }
+          }
+        ]
+      },
+      {
+        "id": "end-to-end-todos;creating-multiple-to-do-tasks",
+        "keyword": "Scenario",
+        "line": 11,
+        "name": "Creating multiple to-do tasks",
+        "tags": [
+          {
+            "name": "@TestCase2",
+            "line": 10
+          },
+          {
+            "name": "@CreateMultipleTasks",
+            "line": 10
+          }
+        ],
+        "type": "scenario",
+        "steps": [
+          {
+            "arguments": [],
+            "keyword": "Given ",
+            "line": 12,
+            "name": "I open Todos Page",
+            "result": {
+              "status": "passed",
+              "duration": 68000000
+            }
+          },
+          {
+            "arguments": [
+              {
+                "rows": [
+                  {
+                    "cells": [
+                      "What needs to be done?"
+                    ]
+                  },
+                  {
+                    "cells": [
+                      "sdwedwed"
+                    ]
+                  },
+                  {
+                    "cells": [
+                      "2323212"
+                    ]
+                  }
+                ]
+              }
+            ],
+            "keyword": "When ",
+            "line": 13,
+            "name": "I fill the todo task details",
+            "result": {
+              "status": "passed",
+              "duration": 934000000
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "Then ",
+            "line": 17,
+            "name": "validate the task created",
+            "result": {
+              "status": "passed",
+              "duration": 5000000
+            }
+          }
+        ]
+      },
+      {
+        "id": "end-to-end-todos;creating-duplicate-to-do-tasks",
+        "keyword": "Scenario",
+        "line": 20,
+        "name": "Creating duplicate to-do tasks",
+        "tags": [
+          {
+            "name": "@Testcase3",
+            "line": 19
+          },
+          {
+            "name": "@CreateDuplicateTasks",
+            "line": 19
+          }
+        ],
+        "type": "scenario",
+        "steps": [
+          {
+            "arguments": [],
+            "keyword": "Given ",
+            "line": 21,
+            "name": "I open Todos Page",
+            "result": {
+              "status": "passed",
+              "duration": 59000000
+            }
+          },
+          {
+            "arguments": [
+              {
+                "rows": [
+                  {
+                    "cells": [
+                      "same task"
+                    ]
+                  },
+                  {
+                    "cells": [
+                      "same task"
+                    ]
+                  }
+                ]
+              }
+            ],
+            "keyword": "When ",
+            "line": 22,
+            "name": "I fill the todo task details",
+            "result": {
+              "status": "passed",
+              "duration": 593000000
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "Then ",
+            "line": 25,
+            "name": "validate the duplicate task is not created",
+            "result": {
+              "status": "failed",
+              "error_message": "AssertionError: expected [ 'same task', 'same task' ] to not include 'same task'\n    at Context.eval (https://todomvc.com/__cypress/tests?p=cypress/integration/todos.feature:82:32)"
+            }
+          }
+        ]
+      },
+      {
+        "id": "end-to-end-todos;creating--task-in-foreign-language",
+        "keyword": "Scenario",
+        "line": 28,
+        "name": "Creating  task in foreign language",
+        "tags": [
+          {
+            "name": "@TestCase4",
+            "line": 27
+          },
+          {
+            "name": "@CreatetaskinForeignLanguage",
+            "line": 27
+          }
+        ],
+        "type": "scenario",
+        "steps": [
+          {
+            "arguments": [],
+            "keyword": "Given ",
+            "line": 29,
+            "name": "I open Todos Page",
+            "result": {
+              "status": "passed",
+              "duration": 55000000
+            }
+          },
+          {
+            "arguments": [
+              {
+                "rows": [
+                  {
+                    "cells": [
+                      "hoe is het met je"
+                    ]
+                  },
+                  {
+                    "cells": [
+                      "आप कैसे हो"
+                    ]
+                  }
+                ]
+              }
+            ],
+            "keyword": "When ",
+            "line": 30,
+            "name": "I fill the todo task details",
+            "result": {
+              "status": "passed",
+              "duration": 703000000
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "Then ",
+            "line": 33,
+            "name": "validate the task created",
+            "result": {
+              "status": "passed",
+              "duration": 3000000
+            }
+          }
+        ]
+      },
+      {
+        "id": "end-to-end-todos;creating-an-empty-task",
+        "keyword": "Scenario",
+        "line": 36,
+        "name": "Creating an empty task",
+        "tags": [
+          {
+            "name": "@TestCase5",
+            "line": 35
+          },
+          {
+            "name": "@CreateAnEmptyTask",
+            "line": 35
+          }
+        ],
+        "type": "scenario",
+        "steps": [
+          {
+            "arguments": [],
+            "keyword": "Given ",
+            "line": 37,
+            "name": "I open Todos Page",
+            "result": {
+              "status": "passed",
+              "duration": 52000000
+            }
+          },
+          {
+            "arguments": [
+              {
+                "rows": [
+                  {
+                    "cells": [
+                      "''"
+                    ]
+                  }
+                ]
+              }
+            ],
+            "keyword": "When ",
+            "line": 38,
+            "name": "I fill the todo task details",
+            "result": {
+              "status": "passed",
+              "duration": 277000000
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "Then ",
+            "line": 40,
+            "name": "validate the task created",
+            "result": {
+              "status": "passed",
+              "duration": 3000000
+            }
+          }
+        ]
+      },
+      {
+        "id": "end-to-end-todos;creating-a-lengthy-task",
+        "keyword": "Scenario",
+        "line": 43,
+        "name": "Creating a lengthy task",
+        "tags": [
+          {
+            "name": "@TestCase6",
+            "line": 42
+          },
+          {
+            "name": "@CreateaLengthyTask",
+            "line": 42
+          }
+        ],
+        "type": "scenario",
+        "steps": [
+          {
+            "arguments": [],
+            "keyword": "Given ",
+            "line": 44,
+            "name": "I open Todos Page",
+            "result": {
+              "status": "passed",
+              "duration": 58000000
+            }
+          },
+          {
+            "arguments": [
+              {
+                "rows": [
+                  {
+                    "cells": [
+                      "abcdefghijklmnopqrstuvwxyzabcdefghijklmnopqrstuvwxyzabcdefghijklmnopqrstuvwxyzabcdefghijklmnopqrstuvwxyzabcdefghijklmnopqrstuvwxyzabcdefghijklmnopqrstuvwxyzabcdefghijklmnopqrstuvwxyzabcdefghijklmnopqrstuvwxyzabcdefghijklmnopqrstuvwxyzabcdefghijklmnopqrstuvwxyzabcdefghijklmnopqrstuvwxyzabcdefghijklmnopqrstuvwxyzabcdefghijklmnopqrstuvwxyzabcdefghijklmnopqrstuvwxyzabcdefghijklmnopqrstuvwxyzabcdefghijklmnopqrstuvwxyzabcdefghijklmnopqrstuvwxyzabcdefghijklmnopqrstuvwxyzabcdefghijklmnopqrstuvwxyz"
+                    ]
+                  }
+                ]
+              }
+            ],
+            "keyword": "When ",
+            "line": 45,
+            "name": "I fill the todo task details",
+            "result": {
+              "status": "passed",
+              "duration": 5810000000
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "Then ",
+            "line": 47,
+            "name": "validate the task created",
+            "result": {
+              "status": "passed",
+              "duration": 5000000
+            }
+          }
+        ]
+      },
+      {
+        "id": "end-to-end-todos;edit-a-task",
+        "keyword": "Scenario",
+        "line": 51,
+        "name": "Edit a task",
+        "tags": [
+          {
+            "name": "@TestCase7",
+            "line": 50
+          },
+          {
+            "name": "@EditTask",
+            "line": 50
+          }
+        ],
+        "type": "scenario",
+        "steps": [
+          {
+            "arguments": [],
+            "keyword": "Given ",
+            "line": 52,
+            "name": "I open Todos Page",
+            "result": {
+              "status": "passed",
+              "duration": 57000000
+            }
+          },
+          {
+            "arguments": [
+              {
+                "rows": [
+                  {
+                    "cells": [
+                      "my first to to task"
+                    ]
+                  }
+                ]
+              }
+            ],
+            "keyword": "When ",
+            "line": 53,
+            "name": "I fill the todo task details",
+            "result": {
+              "status": "passed",
+              "duration": 463000000
+            }
+          },
+          {
+            "arguments": [
+              {
+                "rows": [
+                  {
+                    "cells": [
+                      "edit task"
+                    ]
+                  }
+                ]
+              }
+            ],
+            "keyword": "And ",
+            "line": 55,
+            "name": "I double click on a task and edit it",
+            "result": {
+              "status": "passed",
+              "duration": 6000000
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "Then ",
+            "line": 57,
+            "name": "validate the edited task",
+            "result": {
+              "status": "passed",
+              "duration": 7000000
+            }
+          }
+        ]
+      },
+      {
+        "id": "end-to-end-todos;edit-a-task-and-delete-the-task-name",
+        "keyword": "Scenario",
+        "line": 61,
+        "name": "Edit a task and delete the task name",
+        "tags": [
+          {
+            "name": "@TestCase8",
+            "line": 60
+          },
+          {
+            "name": "@EditTask",
+            "line": 60
+          }
+        ],
+        "type": "scenario",
+        "steps": [
+          {
+            "arguments": [],
+            "keyword": "Given ",
+            "line": 62,
+            "name": "I open Todos Page",
+            "result": {
+              "status": "passed",
+              "duration": 51000000
+            }
+          },
+          {
+            "arguments": [
+              {
+                "rows": [
+                  {
+                    "cells": [
+                      "my first to to task"
+                    ]
+                  }
+                ]
+              }
+            ],
+            "keyword": "When ",
+            "line": 63,
+            "name": "I fill the todo task details",
+            "result": {
+              "status": "passed",
+              "duration": 465000000
+            }
+          },
+          {
+            "arguments": [
+              {
+                "rows": [
+                  {
+                    "cells": [
+                      ""
+                    ]
+                  }
+                ]
+              }
+            ],
+            "keyword": "And ",
+            "line": 65,
+            "name": "I double click on a task and edit it",
+            "result": {
+              "status": "passed",
+              "duration": 4000000
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "Then ",
+            "line": 67,
+            "name": "validate the edited task",
+            "result": {
+              "status": "passed",
+              "duration": 5000000
+            }
+          }
+        ]
+      },
+      {
+        "id": "end-to-end-todos;edit-a-completed-task",
+        "keyword": "Scenario",
+        "line": 70,
+        "name": "Edit a completed task",
+        "tags": [
+          {
+            "name": "@TestCase9",
+            "line": 69
+          },
+          {
+            "name": "@EditTask",
+            "line": 69
+          }
+        ],
+        "type": "scenario",
+        "steps": [
+          {
+            "arguments": [],
+            "keyword": "Given ",
+            "line": 71,
+            "name": "I open Todos Page",
+            "result": {
+              "status": "passed",
+              "duration": 53000000
+            }
+          },
+          {
+            "arguments": [
+              {
+                "rows": [
+                  {
+                    "cells": [
+                      "my first to to task"
+                    ]
+                  }
+                ]
+              }
+            ],
+            "keyword": "When ",
+            "line": 72,
+            "name": "I fill the todo task details",
+            "result": {
+              "status": "passed",
+              "duration": 466000000
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "And ",
+            "line": 74,
+            "name": "I will click on the toggle button",
+            "result": {
+              "status": "passed",
+              "duration": 75000000
+            }
+          },
+          {
+            "arguments": [
+              {
+                "rows": [
+                  {
+                    "cells": [
+                      "dcdfv"
+                    ]
+                  }
+                ]
+              }
+            ],
+            "keyword": "And ",
+            "line": 75,
+            "name": "I double click on a task and edit it",
+            "result": {
+              "status": "passed",
+              "duration": 4000000
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "Then ",
+            "line": 77,
+            "name": "validate the edited task",
+            "result": {
+              "status": "passed",
+              "duration": 4000000
+            }
+          }
+        ]
+      },
+      {
+        "id": "end-to-end-todos;complete-a-task",
+        "keyword": "Scenario",
+        "line": 81,
+        "name": "Complete a task",
+        "tags": [
+          {
+            "name": "@TestCase10",
+            "line": 80
+          },
+          {
+            "name": "@CompleteTask",
+            "line": 80
+          }
+        ],
+        "type": "scenario",
+        "steps": [
+          {
+            "arguments": [],
+            "keyword": "Given ",
+            "line": 82,
+            "name": "I open Todos Page",
+            "result": {
+              "status": "passed",
+              "duration": 53000000
+            }
+          },
+          {
+            "arguments": [
+              {
+                "rows": [
+                  {
+                    "cells": [
+                      "my first to to task"
+                    ]
+                  }
+                ]
+              }
+            ],
+            "keyword": "When ",
+            "line": 83,
+            "name": "I fill the todo task details",
+            "result": {
+              "status": "passed",
+              "duration": 471000000
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "And ",
+            "line": 85,
+            "name": "I will click on the toggle button",
+            "result": {
+              "status": "passed",
+              "duration": 75000000
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "Then ",
+            "line": 86,
+            "name": "validate the completed task",
+            "result": {
+              "status": "passed",
+              "duration": 3000000
+            }
+          }
+        ]
+      },
+      {
+        "id": "end-to-end-todos;complete-a-list-of-tasks",
+        "keyword": "Scenario",
+        "line": 90,
+        "name": "Complete a list of tasks",
+        "tags": [
+          {
+            "name": "@TestCase11",
+            "line": 89
+          },
+          {
+            "name": "@CompleteTask",
+            "line": 89
+          }
+        ],
+        "type": "scenario",
+        "steps": [
+          {
+            "arguments": [],
+            "keyword": "Given ",
+            "line": 91,
+            "name": "I open Todos Page",
+            "result": {
+              "status": "passed",
+              "duration": 55000000
+            }
+          },
+          {
+            "arguments": [
+              {
+                "rows": [
+                  {
+                    "cells": [
+                      "my first to to task"
+                    ]
+                  },
+                  {
+                    "cells": [
+                      "sdsdfef"
+                    ]
+                  },
+                  {
+                    "cells": [
+                      "third task"
+                    ]
+                  }
+                ]
+              }
+            ],
+            "keyword": "When ",
+            "line": 92,
+            "name": "I fill the todo task details",
+            "result": {
+              "status": "passed",
+              "duration": 893000000
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "And ",
+            "line": 96,
+            "name": "I will click on the toggle button",
+            "result": {
+              "status": "passed",
+              "duration": 232000000
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "Then ",
+            "line": 97,
+            "name": "validate the completed task",
+            "result": {
+              "status": "passed",
+              "duration": 6000000
+            }
+          }
+        ]
+      },
+      {
+        "id": "end-to-end-todos;delete-a-particular-task",
+        "keyword": "Scenario",
+        "line": 101,
+        "name": "Delete a particular task",
+        "tags": [
+          {
+            "name": "@TestCase12",
+            "line": 100
+          },
+          {
+            "name": "@DeleteTask",
+            "line": 100
+          }
+        ],
+        "type": "scenario",
+        "steps": [
+          {
+            "arguments": [],
+            "keyword": "Given ",
+            "line": 102,
+            "name": "I open Todos Page",
+            "result": {
+              "status": "passed",
+              "duration": 51000000
+            }
+          },
+          {
+            "arguments": [
+              {
+                "rows": [
+                  {
+                    "cells": [
+                      "my first to to task"
+                    ]
+                  },
+                  {
+                    "cells": [
+                      "sdsdfef"
+                    ]
+                  }
+                ]
+              }
+            ],
+            "keyword": "When ",
+            "line": 103,
+            "name": "I fill the todo task details",
+            "result": {
+              "status": "passed",
+              "duration": 669000000
+            }
+          },
+          {
+            "arguments": [
+              {
+                "rows": [
+                  {
+                    "cells": [
+                      "my first to to task"
+                    ]
+                  }
+                ]
+              }
+            ],
+            "keyword": "And ",
+            "line": 106,
+            "name": "I will click on the destroy button",
+            "result": {
+              "status": "passed",
+              "duration": 57000000
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "Then ",
+            "line": 108,
+            "name": "validate the deleted task",
+            "result": {
+              "status": "passed",
+              "duration": 3000000
+            }
+          }
+        ]
+      },
+      {
+        "id": "end-to-end-todos;delete-a-completed-task",
+        "keyword": "Scenario",
+        "line": 111,
+        "name": "Delete a completed task",
+        "tags": [
+          {
+            "name": "@TestCase12",
+            "line": 110
+          },
+          {
+            "name": "@DeleteTask",
+            "line": 110
+          }
+        ],
+        "type": "scenario",
+        "steps": [
+          {
+            "arguments": [],
+            "keyword": "Given ",
+            "line": 112,
+            "name": "I open Todos Page",
+            "result": {
+              "status": "passed",
+              "duration": 57000000
+            }
+          },
+          {
+            "arguments": [
+              {
+                "rows": [
+                  {
+                    "cells": [
+                      "my first to to task"
+                    ]
+                  },
+                  {
+                    "cells": [
+                      "sdsdfef"
+                    ]
+                  }
+                ]
+              }
+            ],
+            "keyword": "When ",
+            "line": 113,
+            "name": "I fill the todo task details",
+            "result": {
+              "status": "passed",
+              "duration": 665000000
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "And ",
+            "line": 116,
+            "name": "I will click on the toggle button",
+            "result": {
+              "status": "passed",
+              "duration": 148000000
+            }
+          },
+          {
+            "arguments": [
+              {
+                "rows": [
+                  {
+                    "cells": [
+                      "my first to to task"
+                    ]
+                  }
+                ]
+              }
+            ],
+            "keyword": "And ",
+            "line": 117,
+            "name": "I will click on the destroy button",
+            "result": {
+              "status": "passed",
+              "duration": 54000000
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "Then ",
+            "line": 119,
+            "name": "validate the deleted task",
+            "result": {
+              "status": "passed",
+              "duration": 2000000
+            }
+          }
+        ]
+      },
+      {
+        "id": "end-to-end-todos;verify-the-clear-completed-link",
+        "keyword": "Scenario",
+        "line": 122,
+        "name": "Verify the Clear completed link",
+        "tags": [
+          {
+            "name": "@TestCase13",
+            "line": 121
+          },
+          {
+            "name": "@ClearCompleted",
+            "line": 121
+          }
+        ],
+        "type": "scenario",
+        "steps": [
+          {
+            "arguments": [],
+            "keyword": "Given ",
+            "line": 123,
+            "name": "I open Todos Page",
+            "result": {
+              "status": "passed",
+              "duration": 59000000
+            }
+          },
+          {
+            "arguments": [
+              {
+                "rows": [
+                  {
+                    "cells": [
+                      "my first to to task"
+                    ]
+                  },
+                  {
+                    "cells": [
+                      "sdsdfef"
+                    ]
+                  }
+                ]
+              }
+            ],
+            "keyword": "When ",
+            "line": 124,
+            "name": "I fill the todo task details",
+            "result": {
+              "status": "passed",
+              "duration": 664000000
+            }
+          },
+          {
+            "arguments": [
+              {
+                "rows": [
+                  {
+                    "cells": [
+                      "sdsdfef"
+                    ]
+                  }
+                ]
+              }
+            ],
+            "keyword": "And ",
+            "line": 127,
+            "name": "I will click on the toggle button for a particular task",
+            "result": {
+              "status": "passed",
+              "duration": 81000000
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "And ",
+            "line": 129,
+            "name": "click on clear completed link",
+            "result": {
+              "status": "passed",
+              "duration": 75000000
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "Then ",
+            "line": 130,
+            "name": "validate that all the completed task are deleted",
+            "result": {
+              "status": "passed",
+              "duration": 3000000
+            }
+          }
+        ]
+      },
+      {
+        "id": "end-to-end-todos;verify-the-items-left-count",
+        "keyword": "Scenario",
+        "line": 134,
+        "name": "Verify the items left count",
+        "tags": [
+          {
+            "name": "@TestCase14",
+            "line": 133
+          },
+          {
+            "name": "@itemsleft",
+            "line": 133
+          }
+        ],
+        "type": "scenario",
+        "steps": [
+          {
+            "arguments": [],
+            "keyword": "Given ",
+            "line": 135,
+            "name": "I open Todos Page",
+            "result": {
+              "status": "passed",
+              "duration": 62000000
+            }
+          },
+          {
+            "arguments": [
+              {
+                "rows": [
+                  {
+                    "cells": [
+                      "my first to to task"
+                    ]
+                  },
+                  {
+                    "cells": [
+                      "sdsdfef"
+                    ]
+                  }
+                ]
+              }
+            ],
+            "keyword": "When ",
+            "line": 136,
+            "name": "I fill the todo task details",
+            "result": {
+              "status": "passed",
+              "duration": 654000000
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "Then ",
+            "line": 139,
+            "name": "verify the items left count",
+            "result": {
+              "status": "passed",
+              "duration": 4000000
+            }
+          }
+        ]
+      }
+    ]
+  }
+]
